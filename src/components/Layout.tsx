@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { Dog, Users, MapPin, Calendar, Syringe, Heart, Home, LinkIcon, Menu, X } from "lucide-react";
+import { Dog, Users, MapPin, Syringe, Heart, Home, LinkIcon, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 
@@ -9,8 +9,7 @@ const navItems = [
   { to: "/voluntarios", label: "Voluntários", icon: Users },
   { to: "/locais", label: "Locais", icon: MapPin },
   { to: "/atribuicoes", label: "Atribuições", icon: LinkIcon },
-  { to: "/eventos", label: "Eventos", icon: Calendar },
-  { to: "/vacinas", label: "Vacinas", icon: Syringe },
+  { to: "/saude", label: "Saúde", icon: Syringe },
 ];
 
 export default function Layout({ children }: { children: React.ReactNode }) {
