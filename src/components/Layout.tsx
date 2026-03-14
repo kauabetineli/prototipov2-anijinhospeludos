@@ -73,7 +73,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       </header>
 
       {/* Main */}
-      <main className="flex-1 container py-6">{children}</main>
+      <main className="flex-1 container py-8">{children}</main>
 
       {/* Footer */}
       <footer className="border-t bg-card py-6">
