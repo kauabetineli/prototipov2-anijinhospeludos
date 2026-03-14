@@ -22,23 +22,23 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <header className="sticky top-0 z-50 border-b bg-card/80 backdrop-blur supports-[backdrop-filter]:bg-card/60">
         <div className="container flex h-16 items-center justify-between">
           <Link to="/" className="flex items-center gap-2">
-            <Heart className="h-7 w-7 text-primary fill-primary" />
-            <span className="font-display text-xl text-foreground">Anjinhos Peludos</span>
+            <Heart className="h-9 w-9 text-primary fill-primary" />
+            <span className="font-display text-2xl text-foreground">Anjinhos Peludos</span>
           </Link>
 
           {/* Desktop nav */}
-          <nav className="hidden md:flex items-center gap-1">
+          <nav className="hidden md:flex items-center gap-1.5">
             {navItems.map(({ to, label, icon: Icon }) => (
               <Link
                 key={to}
                 to={to}
-                className={`flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm font-semibold transition-colors ${
+                className={`flex items-center gap-2 px-4 py-2.5 rounded-lg text-base font-semibold transition-colors ${
                   location.pathname === to
                     ? "bg-primary text-primary-foreground"
                     : "text-muted-foreground hover:bg-secondary hover:text-foreground"
                 }`}
               >
-                <Icon className="h-4 w-4" />
+                <Icon className="h-5 w-5" />
                 {label}
               </Link>
             ))}
@@ -46,7 +46,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
           {/* Mobile toggle */}
           <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setMobileOpen(!mobileOpen)}>
-            {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+            {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </Button>
         </div>
 
