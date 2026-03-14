@@ -48,7 +48,7 @@ export default function VacinasPage() {
       toast({ title: "Animal, vacina e data são obrigatórios", variant: "destructive" }); return;
     }
     createItem<HistoricoVacina>(KEYS.VACINAS, {
-      animal_id: animalId, nome_vacina: nomeVacina, aplicado_em: aplicadoEm,
+      animal_id: animalId, tipo_registro: "vacina", nome_vacina: nomeVacina, aplicado_em: aplicadoEm,
       proxima_dose_em: proximaDose, aplicado_por: aplicadoPor, lote, observacoes: obs,
       criado_em: new Date().toISOString(),
     });
