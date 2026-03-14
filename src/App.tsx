@@ -10,6 +10,7 @@ import VoluntariosPage from "./pages/VoluntariosPage";
 import LocaisPage from "./pages/LocaisPage";
 import AtribuicoesPage from "./pages/AtribuicoesPage";
 import SaudePage from "./pages/SaudePage";
+import EstatisticasPage from "./pages/EstatisticasPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
