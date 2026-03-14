@@ -52,8 +52,7 @@ const Index = () => {
       <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {[
           { to: "/atribuicoes", label: "Atribuições", desc: "Vincular animais a locais e voluntários", icon: LinkIcon },
-          { to: "/eventos", label: "Eventos", desc: "Registrar eventos dos animais", icon: Calendar },
-          { to: "/vacinas", label: "Vacinas", desc: "Histórico de vacinação", icon: Syringe },
+          { to: "/saude", label: "Saúde", desc: "Histórico e agenda de vacinação", icon: Syringe },
         ].map(({ to, label, desc, icon: Icon }) => (
           <Link key={to} to={to}>
             <Card className="hover:shadow-md transition-shadow cursor-pointer h-full">
