@@ -20,7 +20,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     <div className="min-h-screen flex flex-col">
       {/* Header */}
       <header className="sticky top-0 z-50 border-b bg-card/80 backdrop-blur supports-[backdrop-filter]:bg-card/60">
-        <div className="container flex h-16 items-center justify-between">
+        <div className="container flex h-20 items-center justify-between">
           <Link to="/" className="flex items-center gap-2">
             <Heart className="h-9 w-9 text-primary fill-primary" />
             <span className="font-display text-2xl text-foreground">Anjinhos Peludos</span>
