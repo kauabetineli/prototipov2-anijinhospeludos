@@ -66,9 +66,12 @@ export interface EventoAnimal {
   detalhes: string;
 }
 
+export type TipoRegistroSaude = 'vacina' | 'consulta' | 'tratamento';
+
 export interface HistoricoVacina {
   id: string;
   animal_id: string;
+  tipo_registro: TipoRegistroSaude;
   nome_vacina: string;
   aplicado_em: string;
   proxima_dose_em: string;

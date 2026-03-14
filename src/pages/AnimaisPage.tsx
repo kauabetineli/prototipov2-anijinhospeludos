@@ -116,7 +116,7 @@ export default function AnimaisPage() {
   const saveVacina = () => {
     if (!vacinaForm.nome_vacina.trim() || !vacinaForm.aplicado_em) { toast({ title: "Vacina e data são obrigatórios", variant: "destructive" }); return; }
     createItem<HistoricoVacina>(KEYS.VACINAS, {
-      animal_id: detailAnimal!.id, ...vacinaForm, criado_em: new Date().toISOString(),
+      animal_id: detailAnimal!.id, tipo_registro: "vacina", ...vacinaForm, criado_em: new Date().toISOString(),
     });
     toast({ title: "Vacina registrada!" });
     setVacinaDialogOpen(false);
