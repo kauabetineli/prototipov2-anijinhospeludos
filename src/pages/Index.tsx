@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Dog, Users, MapPin, Calendar, Syringe, LinkIcon, Heart, PawPrint } from "lucide-react";
+import { Dog, Users, MapPin, Syringe, LinkIcon, Heart, PawPrint } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { getAll, KEYS, type Animal, type Voluntario, type Local } from "@/lib/storage";
 
