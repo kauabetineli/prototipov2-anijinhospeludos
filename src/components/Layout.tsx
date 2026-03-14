@@ -10,6 +10,7 @@ const navItems = [
   { to: "/locais", label: "Locais", icon: MapPin },
   { to: "/atribuicoes", label: "Atribuições", icon: LinkIcon },
   { to: "/saude", label: "Saúde", icon: Syringe },
+  { to: "/estatisticas", label: "Estatísticas", icon: BarChart3 },
 ];
 
 export default function Layout({ children }: { children: React.ReactNode }) {
