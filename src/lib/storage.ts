@@ -3,7 +3,7 @@
 export interface Animal {
   id: string;
   nome: string;
-  especie: 'cachorro' | 'gato' | 'ave' | 'roedor' | 'outro';
+  especie: 'cachorro' | 'gato';
   raca: string;
   sexo: 'macho' | 'femea' | 'desconhecido';
   data_nascimento: string;

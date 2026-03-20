@@ -28,7 +28,7 @@ const statusOptions = [
 ] as const;
 
 const emptyAnimal: Omit<Animal, "id"> = {
-  nome: "", especie: "outro", raca: "", sexo: "desconhecido",
+  nome: "", especie: "cachorro", raca: "", sexo: "desconhecido",
   data_nascimento: "", numero_microchip: "", data_entrada: new Date().toISOString(),
   status: "disponivel", observacoes: "",
   criado_em: new Date().toISOString(), atualizado_em: new Date().toISOString(),
