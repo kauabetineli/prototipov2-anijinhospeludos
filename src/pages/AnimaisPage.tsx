@@ -17,7 +17,7 @@ import {
   type HistoricoVacina, type AtribuicaoAnimalLocal, type AtribuicaoAnimalVoluntario,
 } from "@/lib/storage";
 
-const especieOptions = ["cachorro", "gato", "ave", "roedor", "outro"] as const;
+const especieOptions = ["cachorro", "gato"] as const;
 const sexoOptions = ["macho", "femea", "desconhecido"] as const;
 const statusOptions = [
   { value: "disponivel", label: "Disponível", color: "bg-green-100 text-green-800" },
@@ -28,7 +28,7 @@ const statusOptions = [
 ] as const;
 
 const emptyAnimal: Omit<Animal, "id"> = {
-  nome: "", especie: "outro", raca: "", sexo: "desconhecido",
+  nome: "", especie: "cachorro", raca: "", sexo: "desconhecido",
   data_nascimento: "", numero_microchip: "", data_entrada: new Date().toISOString(),
   status: "disponivel", observacoes: "",
   criado_em: new Date().toISOString(), atualizado_em: new Date().toISOString(),
