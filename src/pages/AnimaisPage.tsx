@@ -17,7 +17,7 @@ import {
   type HistoricoVacina, type AtribuicaoAnimalLocal, type AtribuicaoAnimalVoluntario,
 } from "@/lib/storage";
 
-const especieOptions = ["cachorro", "gato", "ave", "roedor", "outro"] as const;
+const especieOptions = ["cachorro", "gato"] as const;
 const sexoOptions = ["macho", "femea", "desconhecido"] as const;
 const statusOptions = [
   { value: "disponivel", label: "Disponível", color: "bg-green-100 text-green-800" },
