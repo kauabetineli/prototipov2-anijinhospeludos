@@ -1,11 +1,12 @@
 import { Link, useLocation } from "react-router-dom";
-import { Dog, Users, MapPin, Syringe, Heart, Home, LinkIcon, Menu, X, BarChart3 } from "lucide-react";
+import { Dog, Users, MapPin, Syringe, Heart, Home, LinkIcon, Menu, X, BarChart3, HeartHandshake } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 
 const navItems = [
   { to: "/", label: "Início", icon: Home },
   { to: "/animais", label: "Animais", icon: Dog },
+  { to: "/adocao", label: "Adoção", icon: HeartHandshake },
   { to: "/voluntarios", label: "Voluntários", icon: Users },
   { to: "/locais", label: "Locais", icon: MapPin },
   { to: "/atribuicoes", label: "Atribuições", icon: LinkIcon },
