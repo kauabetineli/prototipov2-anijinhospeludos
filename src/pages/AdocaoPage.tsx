@@ -1,8 +1,10 @@
 import { useState, useEffect, useMemo } from "react";
+import { useNavigate } from "react-router-dom";
 import { Search, Dog, Cat, Heart, Calendar, Hash, Info } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { getAll, KEYS, type Animal } from "@/lib/storage";
 import { format, differenceInMonths, differenceInYears, parseISO } from "date-fns";
@@ -23,6 +25,7 @@ function formatarSexo(sexo: string) {
 }
 
 export default function AdocaoPage() {
+  const navigate = useNavigate();
   const [animais, setAnimais] = useState<Animal[]>([]);
   const [search, setSearch] = useState("");
   const [filtroEspecie, setFiltroEspecie] = useState<string>("todos");
@@ -173,6 +176,14 @@ export default function AdocaoPage() {
                     <p className="line-clamp-3">{animal.observacoes}</p>
                   </div>
                 )}
+
+                <Button
+                  className="w-full gap-2 mt-2"
+                  onClick={() => navigate(`/adocao/${animal.id}`)}
+                >
+                  <Heart className="h-4 w-4" />
+                  Quero Adotar
+                </Button>
               </CardContent>
             </Card>
           ))}
