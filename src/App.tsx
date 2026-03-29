@@ -11,6 +11,7 @@ import LocaisPage from "./pages/LocaisPage";
 import AtribuicoesPage from "./pages/AtribuicoesPage";
 import SaudePage from "./pages/SaudePage";
 import EstatisticasPage from "./pages/EstatisticasPage";
+import AdocaoPage from "./pages/AdocaoPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -25,6 +26,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/animais" element={<AnimaisPage />} />
+            <Route path="/adocao" element={<AdocaoPage />} />
             <Route path="/voluntarios" element={<VoluntariosPage />} />
             <Route path="/locais" element={<LocaisPage />} />
             <Route path="/atribuicoes" element={<AtribuicoesPage />} />
