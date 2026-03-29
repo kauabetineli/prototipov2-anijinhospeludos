@@ -79,10 +79,18 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
       {/* Footer */}
       <footer className="border-t bg-card py-6">
-        <div className="container text-center text-sm text-muted-foreground">
+        <div className="container flex flex-col items-center gap-3 text-sm text-muted-foreground">
           <p className="flex items-center justify-center gap-1">
             Feito com <Heart className="h-3.5 w-3.5 text-primary fill-primary" /> por Anjinhos Peludos
           </p>
+          <div className="flex items-center gap-4">
+            <a href="https://www.instagram.com/anjinhospeludos.tj/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+              <Instagram className="h-5 w-5" />
+            </a>
+            <a href="https://www.facebook.com/AnjinhosPeludosTijucasSC" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+              <Facebook className="h-5 w-5" />
+            </a>
+          </div>
         </div>
       </footer>
     </div>
